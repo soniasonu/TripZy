@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripzy</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header section start-->
+     <a href="gallery.html">View Photos</a>
+<header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>T</span>ripZy</a>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#packages">Packages</a>
+        <a href="#services">Services</a>
+        <a href="#book">Book</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search here...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+</header>
+
+    <!--header section ends -->
+<!--login form container-->
+<div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form id="loginFormContent" onsubmit="handleLogin(event)">
+        <h3>Login</h3>
+        <input type="email" id="loginEmail" class="box" placeholder="Enter your email" required>
+        <input type="password" id="loginPassword" class="box" placeholder="Enter your password" required>
+        <input type="submit" value="Login now" class="btn">
+        <p>Don't have an account?
+            <a href="#" onclick="showRegister(); return false;">Register now</a>
+        </p>
+    </form>
+
+    <form id="registerForm" style="display: none;" onsubmit="handleRegister(event)">
+        <h3>Register</h3>
+        <input type="text" id="regName" class="box" placeholder="Enter your name" required>
+        <input type="email" id="regEmail" class="box" placeholder="Enter your email" required>
+        <input type="password" id="regPassword" class="box" placeholder="Create a password" minlength="6" required>
+        <input type="submit" value="Create Account" class="btn">
+        <p>Already have an account?
+            <a href="#" onclick="showLogin(); return false;">Login now</a>
+        </p>
+    </form>
+</div>
+
+
+
+<!--home section start-->
+<section class="home" id="home">
+
+
+    <div class="content">
+        <h3>Adventure is worthwhile</h3>
+        <p>discover new places with us, adventure awaits</p>
+        <a href="#packages" class="btn">Discover more</a>
+        <form class="hero-search" onsubmit="handleHeroSearch(event)">
+            <div class="field">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" id="heroPlace" placeholder="where to?">
+            </div>
+            <button type="submit"><i class="fas fa-search"></i> search</button>
+        </form>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+</section>
+
+
+<!--packages section start-->
+
+<section class="packages" id="packages">
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/p-7.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>India</h3>
+                <p>Explore colorful cities, old forts, and peaceful backwaters. This package includes hotel stay, local food, and guided tours. </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $100.00<span> $120.00</span></div>
+                <a href="#book" class="btn">Book now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/p-1.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>Mumbai</h3>
+                <p>See the Gateway of India, Marine Drive, and the busy street markets. A perfect city trip with sea views and great street food. </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $110.00<span> $120.00</span></div>
+                <a href="#book" class="btn">Book now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/p-2.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>Sydney</h3>
+                <p>Visit the Opera House, enjoy the beaches, and take a ferry across the harbour. Hotel and city tour are included. </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $100.00<span> $120.00</span></div>
+                <a href="#book" class="btn">Book now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/p-3.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>Hawai</h3>
+                <p>Relax on white sandy beaches and watch the sunset by the ocean. A calm island trip for families and couples.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $100.00<span> $150.00</span></div>
+                <a href="#book" class="btn">Book now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/p-4.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>Paris</h3>
+                <p>Walk around the Eiffel Tower, visit the Louvre, and enjoy fresh cafe food. Stay in a nice hotel in the middle of the city. </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $150.00<span> $160.00</span></div>
+                <a href="#book" class="btn">Book now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/p-5.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>Tokyo</h3>
+                <p>Discover the mix of modern lights and old temples. Enjoy sushi, shopping, and fast train rides across the city. </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $110.00<span> $120.00</span></div>
+                <a href="#book" class="btn">Book now</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/p-6.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>Egypt</h3>
+                <p>Visit the pyramids, sail on the Nile, and learn about ancient history with a local guide. </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> $100.00<span> $120.00</span></div>
+                <a href="#book" class="btn">Book now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--service section start-->
+
+<section class="services" id="services">
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>affordable hotels</h3>
+            <p>Stay in clean and comfortable hotels that fit your budget, close to the places you want to visit.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>food and drinks</h3>
+            <p>Try local dishes and popular restaurants during your trip. Meals can be added to your package.></p>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>safty guide</h3>
+            <p>Our guides help you stay safe with travel tips, emergency contacts, and support at every step.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>around the world</h3>
+            <p>We have tour packages for many countries, so you can pick the place you always wanted to visit.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>fastest travel</h3>
+            <p>We book the best flights and routes, so you spend less time travelling and more time enjoying.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>adventure</h3>
+            <p>Try trekking, camping, boating, and many more activities with trained and friendly guides.</p>
+        </div>
+    </div>
+</section>
+
+<!--book section-->
+
+<section class="book" id="book">
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+
+    <div class="row">
+        <div class="image">
+            <img src="images/book-img.png" alt="">
+        </div>
+        <form id="bookForm" onsubmit="handleBooking(event)">
+            <div class="inputBox">
+                <h3>where to</h3>
+                <input type="text" id="bookPlace" placeholder="place name" required>
+            </div>
+            <div class="inputBox">
+                <h3>how many</h3>
+                <input type="number" id="bookGuests" placeholder="number of guests" min="1" required>
+            </div>
+            <div class="inputBox">
+                <h3>arrivals</h3>
+                <input type="date" id="bookArrival" required>
+            </div>
+            <div class="inputBox">
+                <h3>leaving</h3>
+                <input type="date" id="bookLeaving" required>
+            </div>
+            <input type="submit" class="btn" value="book now">
+        </form>
+    </div>
+</section>
+
+<!--gallery section start-->
+<section class="gallery" id="gallery">
+    <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="images/g-1.jpg" alt="">
+            <div class="content">
+                <h3>Tropical Beach</h3>
+                <p>Clear blue water, soft sand, and green hills by the sea.</p>
+                <a href="gallery.html" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-2.jpg" alt="">
+            <div class="content">
+                <h3>Great Wall</h3>
+                <p>Walk along the old wall and enjoy the mountain view.</p>
+                <a href="gallery.html" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-3.jpg" alt="">
+            <div class="content">
+                <h3>Gateway of India</h3>
+                <p>A famous landmark in Mumbai, right by the sea.</p>
+                <a href="gallery.html" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-4.jpg" alt="">
+            <div class="content">
+                <h3>Paris Streets</h3>
+                <p>Pretty streets, spring flowers, and the Eiffel Tower in view.</p>
+                <a href="gallery.html" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-5.jpg" alt="">
+            <div class="content">
+                <h3>Tulip Fields</h3>
+                <p>Rows of bright tulips in every color you can think of.</p>
+                <a href="gallery.html" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-6.jpg" alt="">
+            <div class="content">
+                <h3>Art Gallery</h3>
+                <p>A calm hall with colorful paintings and a water path.</p>
+                <a href="gallery.html" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-7.jpg" alt="">
+            <div class="content">
+                <h3>Bamboo Forest</h3>
+                <p>A quiet road with tall green bamboo on both sides.</p>
+                <a href="gallery.html" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-8.jpg" alt="">
+            <div class="content">
+                <h3>Lavender Fields</h3>
+                <p>Purple fields as far as you can see, with a lovely countryside feel.</p>
+                <a href="gallery.html" class="btn">see more</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-9.avif" alt="">
+            <div class="content">
+                <h3>Tanah Lot, Bali</h3>
+                <p>A temple on the rocks, with a beautiful sunset over the sea.</p>
+                <a href="gallery.html" class="btn">see more</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--review section start-->
+<section class="review" id="review">
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+    </h1>
+    <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="box">
+                    <h3>Rahul A</h3>
+                    <p>Our trip was well planned and the hotel was very good. The guide was friendly and helped us with everything.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <h3>Anjali M</h3>
+                    <p>I booked the Paris package and it was worth the price. Everything was on time and the team replied quickly.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <h3>Arun K</h3>
+                    <p>This was our first family trip with them and it was smooth. The kids enjoyed every day. I will book again.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <h3>Neha S</h3>
+                    <p>Nice service and good prices. The food and stay were better than I expected. <br>I will book again.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--contact section start-->
+<section class="contact" id="contact">
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+    <div class="row">
+        <div class="image">
+            <img src="images/c-img.jpg" alt="">
+        </div>
+        <form id="contactForm" onsubmit="handleContact(event)">
+            <div class="inputBox">
+                <input type="text" id="conName" placeholder="name" required>
+                <input type="email" id="conEmail" placeholder="email" required>
+            </div>
+            <div class="inputBox">
+                <input type="tel" id="conPhone" placeholder="number" pattern="[0-9]{10}" title="Enter a 10 digit number" required>
+                <input type="text" id="conSubject" placeholder="subject" required>
+            </div>
+            <textarea id="conMessage" placeholder="message" cols="30" rows="10" required></textarea>
+            <input type="submit" class="btn" value="send message">
+        </form>
+    </div>
+</section>
+
+
+<!--footer section start-->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>about us</h3>
+            <p>We are a travel team that helps people plan simple and happy trips. From hotels and food to flights and guides, we take care of everything so you can enjoy your holiday without stress.</p>     
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="#">india</a>
+            <a href="#">USA</a>
+            <a href="#">japan</a>
+            <a href="#">france</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home">home</a>
+            <a href="#packages">packages</a>
+            <a href="#services">services</a>
+            <a href="#book">book</a>
+            <a href="#gallery">gallery</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+    </div>
+</section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
