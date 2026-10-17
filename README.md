@@ -2,7 +2,7 @@
 
 TripZy is a travel website I made using HTML, CSS and JavaScript. It shows travel packages, services, a photo gallery, and has forms for login, booking and contact.
 
-**Live site:** https://soniasonu.github.io/Tripzy/
+**Live site:**  https://soniasonu.github.io/TripZy/
 
 ![TripZy screenshot](screenshot.png)
 
