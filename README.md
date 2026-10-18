@@ -41,7 +41,7 @@ The login, register, booking and contact forms are only a demo. They save the da
 3. Right click `index.html` and choose **Open with Live Server**. You can also just open `index.html` in the browser.
 
 ## What I want to add next
-
+  
 - A real backend with Django and MySQL for login, bookings and messages.
 - Real packages with details pages.
 - Sending the contact messages to my email.
