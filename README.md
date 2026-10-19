@@ -26,7 +26,7 @@ The login, register, booking and contact forms are only a demo. They save the da
 - Swiper.js for the review slider
 - Font Awesome for the icons
 - Google Fonts (Nunito and Playfair Display)
-- GitHub Pages to host it
+- GitHub Pages to host it          
 
 ## Things I learned
 
