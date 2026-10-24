@@ -6,7 +6,7 @@ TripZy is a travel website I made using HTML, CSS and JavaScript. It shows trave
 
 ![TripZy screenshot](screenshot.png)
 
-## What it has
+## What it has               
 
 - A home page with a background video. I can switch between 3 videos using the dots.
 - A search bar on the home page. When I type a place like "Paris", it shows only that package.
