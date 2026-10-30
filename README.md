@@ -5,7 +5,7 @@ TripZy is a travel website I made using HTML, CSS and JavaScript. It shows trave
 **Live site:**  https://soniasonu.github.io/TripZy/
 
 ![TripZy screenshot](screenshot.png)
-
+  
 ## What it has               
 
 - A home page with a background video. I can switch between 3 videos using the dots.
