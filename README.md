@@ -5,8 +5,10 @@ TripZy is a travel website I made using HTML, CSS and JavaScript. It shows trave
 **Live site:**  https://soniasonu.github.io/TripZy/
 
 ![TripZy screenshot](screenshot.png)
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/c15a18c6-e662-4a2f-b511-c391827ed722" />
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/063bd748-38d2-4095-979f-cdb118ea771e" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/c15a18c6-e662-4a2f-b511-c391827ed722" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/063bd748-38d2-4095-979f-cdb118ea771e" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/11f4d36f-2f62-49cc-89ee-b3db57c34982" />
+
 
 
   
