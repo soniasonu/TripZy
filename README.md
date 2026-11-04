@@ -5,6 +5,8 @@ TripZy is a travel website I made using HTML, CSS and JavaScript. It shows trave
 **Live site:**  https://soniasonu.github.io/TripZy/
 
 ![TripZy screenshot](screenshot.png)
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/c15a18c6-e662-4a2f-b511-c391827ed722" />
+
   
 ## What it has               
 
