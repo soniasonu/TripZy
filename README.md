@@ -10,7 +10,7 @@ TripZy is a travel website I made using HTML, CSS and JavaScript. It shows trave
 <img width="250" alt="image" src="https://github.com/user-attachments/assets/063bd748-38d2-4095-979f-cdb118ea771e" />
 <img width="250" alt="image" src="https://github.com/user-attachments/assets/11f4d36f-2f62-49cc-89ee-b3db57c34982" />
 
-  
+                      
 ## What it has               
 
 - A home page with a background video. I can switch between 3 videos using the dots.
